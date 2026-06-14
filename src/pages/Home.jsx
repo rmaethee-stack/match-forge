@@ -42,12 +42,13 @@ export default function Home({ data, setData }) {
           MatchForge data is currently managed in localstorage.
         </p>
       </section>
+      
       <nav style={{ marginTop: 32 }}>
         <ul style={{ listStyle: 'none', padding: 0 }}>
-          <li><a href="#users">Users</a></li>
-          <li><a href="#teams">Teams</a></li>
-          <li><a href="#matches">Matches</a></li>
-          <li><a href="#tournaments">Tournaments</a></li>
+          <li><a href="users">Users</a></li>
+          <li><a href="teams">Teams</a></li>
+          <li><a href="matches">Matches</a></li>
+          <li><a href="tournaments">Tournaments</a></li>
         </ul>
       </nav>
     </div>
