@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { clearData, loadData, saveData } from './data/storage.js';
 import Home from './pages/Home.jsx';
+import Users from './pages/Users.jsx';
 
 const initialData = {
   users: [],
@@ -35,7 +36,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home data={data} setData={setData} />} />
-        <Rout path="/users" element={<div>Users</div>} />
+        <Route path="/users" element={<Users data={data} setData={setData} />} />
         <Route path="/teams" element={<div>Teams</div>} />
         <Route path="/matches" element={<div>Matches</div>} />
         <Route path="/tournaments" element={<div>Tournaments</div>} />
